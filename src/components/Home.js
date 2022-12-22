@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import { BsPeopleFill,BsEmojiSmile } from "react-icons/bs";
+import { BsPeopleFill } from "react-icons/bs";
 import { ChatRoom } from './Chat';
 
 
