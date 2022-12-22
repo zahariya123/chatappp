@@ -3,6 +3,8 @@ import { useState } from "react";
 import { BsEmojiSmile } from "react-icons/bs";
 import { useContext } from "react";
 import { MyContext } from "../context/context-application";
+import PropTypes from 'prop-types';
+
 export const ChatRoom = (props) => {
   const context = useContext(MyContext);
   const { data, person, color } = props;
@@ -12,7 +14,11 @@ export const ChatRoom = (props) => {
   const [msg, setMsg] = useState(false);
   const date = new Date();
   
-
+  ChatRoom.propTypes ={
+    data : PropTypes.string.isRequired,
+    person:PropTypes.string.isRequired,
+    color:PropTypes.string.isRequired,
+  }
   const addMessage = () => {
     const randomname = user_list[Math.floor(Math.random() * user_list.length)];
     const color_profile =color_list[Math.floor(Math.random() * color_list.length)];
