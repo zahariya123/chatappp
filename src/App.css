@@ -50,8 +50,24 @@ main {
   display: flex;
   flex-direction: column;
 }
-
-
+.header-title{
+  font-size: 20px;
+  color: black;
+}
+.sub-header{
+  color: gray;
+}
+.name-in-short{
+  width:15px;
+  height:25px;
+  border-radius: 100%;
+  text-align: left;
+  font-size: 20px;
+}
+.time-style{
+color: gray;
+font-size: 15px;
+}
 
 
 .form-input{
