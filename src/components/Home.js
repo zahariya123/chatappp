@@ -7,6 +7,8 @@ import { ChatRoom } from './Chat';
 export const Home = () => {
 
 const arr = [];
+const Person = [];
+const colorPro = [];
   const Left = styled.div`
     width: 50%;
     text-align: left;
@@ -32,7 +34,7 @@ const arr = [];
       </header>
 
       <section>
-        <ChatRoom data={arr} />
+        <ChatRoom data={arr}  person = {Person}  color = {colorPro}/>
       </section>
    </>
   )
