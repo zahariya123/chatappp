@@ -11,19 +11,16 @@ export const ChatRoom = (props) => {
   const [formValue, setFormValue] = useState("");
   const [msg, setMsg] = useState(false);
   const date = new Date();
-  const name = [];
-  const userColor = [];
+  
 
-  const addMessage = (formValue) => {
+  const addMessage = () => {
     const randomname = user_list[Math.floor(Math.random() * user_list.length)];
-    const color_profile =
-      color_list[Math.floor(Math.random() * color_list.length)];
+    const color_profile =color_list[Math.floor(Math.random() * color_list.length)];
     context.setColor(color);
     context.setChatHistory(data);
     context.setUser(person);
     person.push(randomname);
     color.push(color_profile);
-    console.log(name);
     data.push(formValue);
     setFormValue("");
     setMsg(true);
@@ -78,7 +75,7 @@ export const ChatRoom = (props) => {
           placeholder="say something nice"
         />
 
-        <button type="submit" onClick={() => addMessage(formValue)}>
+        <button type="submit" onClick={() => addMessage()}>
           <BsEmojiSmile />
         </button>
       </div>
