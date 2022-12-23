@@ -1,7 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React,{useState,useContext} from "react";
 import { BsEmojiSmile } from "react-icons/bs";
-import { useContext } from "react";
 import { MyContext } from "../context/context-application";
 import PropTypes from 'prop-types';
 
@@ -11,7 +9,6 @@ export const ChatRoom = (props) => {
   const user_list = ["Alan", "Bob", "Carol", "Dean", "Elin"];
   const color_list = ["red", "green", "blue", "yellow", "gray"];
   const [formValue, setFormValue] = useState("");
-  const [msg, setMsg] = useState(false);
   const date = new Date();
   
   ChatRoom.propTypes ={
@@ -29,7 +26,6 @@ export const ChatRoom = (props) => {
     color.push(color_profile);
     data.push(formValue);
     setFormValue("");
-    setMsg(true);
   };
 
   return (
