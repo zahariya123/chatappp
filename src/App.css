@@ -31,14 +31,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: rgb(232, 229, 246);
+  padding: 20px;
 }
 ::-webkit-scrollbar {display:none;}
 
 main {
   padding: 10px;
-  height: 70vh;
+  height: 62vh;
   margin: 10vh 0 10vh;
   width: 75%;
   scrollbar-width: none;
