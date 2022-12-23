@@ -4,8 +4,8 @@ export const MyContext = React.createContext();
 
 export const ApplicationContextProvider = ({ children }) => {
 
-  MyContext.propTypes={
-children:PropTypes.string.isRequired
+  ApplicationContextProvider.propTypes={
+children:PropTypes.node.isRequired
   }
     const [chatHistory,setChatHistory] = useState([]);
     const [user,setUser] = useState([])
